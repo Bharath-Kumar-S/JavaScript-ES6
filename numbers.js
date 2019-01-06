@@ -28,3 +28,8 @@ let lower = 1
 let random = Math.floor(Math.random() * (upper - lower + 1)) + lower
 
 console.log(random)
+
+
+let tempFH = 100
+let tempCE = (tempFH - 32) * (5/9)
+console.log(Math.floor(tempCE));
