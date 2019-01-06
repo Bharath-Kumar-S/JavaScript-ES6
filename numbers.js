@@ -3,9 +3,6 @@
 let a = 22 / 7;
 console.log(a.toFixed(2))
 
-
-
-
 // Math functions
 
 // floor and ciel
@@ -26,10 +23,24 @@ let upper = 6
 let lower = 1
 
 let random = Math.floor(Math.random() * (upper - lower + 1)) + lower
-
 console.log(random)
-
-
+// far to cel
 let tempFH = 100
-let tempCE = (tempFH - 32) * (5/9)
+let tempCE = (tempFH - 32) * (5 / 9)
 console.log(Math.floor(tempCE));
+tempFH = (tempCE * 9 / 5) + 32
+console.log(Math.floor(tempFH))
+
+
+//fibo
+
+a = 0,
+    b = 1
+let c
+console.log(a,b)
+for (i = 8; i >= 0; i--) {
+    c = a + b
+    a = b
+    b = c
+    console.log(c)
+}
