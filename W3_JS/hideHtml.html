@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+    const hide = ()=>{
+    var a = document.getElementById('demo').style.display;
+    if(a == 'none'){
+        document.getElementById('demo').style.display = 'block'
+    }
+    else{
+        document.getElementById('demo').style.display = 'none'
+    }
+            }
+</script>
+
+<body>
+
+    <h2>What Can JavaScript Do?</h2>
+
+    <p id="demo">JavaScript can hide HTML elements.</p>
+
+    <button type="button" onclick="hide()">Click Me!</button>
+
+</body>
+
+</html>

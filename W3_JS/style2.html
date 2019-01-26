@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<script>
+
+    function change(){
+    var size = document.getElementById('demo').style.fontSize;
+    if(size == '35px'){
+        document.getElementById('demo').style.fontSize = '50px';
+        alert('50px');
+    }
+    else{
+        document.getElementById('demo').style.fontSize = '35px';
+        alert('35px');
+    }
+}
+
+</script>
+
+<body>
+
+    <h2>What Can JavaScript Do?</h2>
+
+    <p id="demo">JavaScript can change the style of an HTML element.</p>
+
+    <button type="button" onclick="change()">Click Me!</button>
+
+</body>
+
+</html>
