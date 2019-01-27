@@ -1,6 +1,14 @@
 // declare and define a array
 const arr = ['Bharath', 'Ramya', 'Kutty_pappa']
 
+console.log(arr instanceof Array);
+
+function IsArray(myArray) {
+  return myArray.constructor.toString().indexOf("Array") > -1;
+}
+
+console.log(IsArray(arr));
+
 //check if a array
 console.log(Array.isArray(arr))
 
@@ -15,7 +23,7 @@ arr.push('Kumar')
 
 //using forEach template it
 arr.forEach((ar, index) => {
-    console.log(`${index+1}. This is ${ar} here !!!`)
+  console.log(`${index+1}. This is ${ar} here !!!`)
 })
 
 //pop last entry
@@ -67,7 +75,7 @@ console.log(vegetables);
 // ["Cabbage", "Turnip", "Radish", "Carrot"]
 
 var pos = 1,
-    n = 2;
+  n = 2;
 
 var removedItems = vegetables.splice(pos, n);
 // this is how to remove items, n defines the number of items to be removed,
@@ -134,18 +142,36 @@ console.log(array1.concat(array2));
 // expected output: Array ["a", "b", "c", "d", "e", "f"]
 
 //Array reduce
-[0, 1, 2, 3, 4].reduce( (accumulator, currentValue, currentIndex, array) =>{
-    console.log(currentIndex)
+[0, 1, 2, 3, 4].reduce((accumulator, currentValue, currentIndex, array) => {
+  console.log(currentIndex)
 });
 
 
 //Array some function
 var array = [1, 2, 3, 4, 5];
 
-var even = function(element) {
+var even = function (element) {
   // checks whether an element is even
   return element % 2 === 0;
 };
 
 console.log(array.some(even));
 // expected output: true
+
+
+
+var find = [1, 2, 3, 4, 25, 96, 7];
+
+var some = find.some((e) => {
+  return e > 18;
+})
+
+console.log(some);
+
+var every = find.every((e) => {
+  return e > 18;
+})
+
+// find.
+
+console.log(every);

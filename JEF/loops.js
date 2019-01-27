@@ -10,6 +10,6 @@ const total = orders.reduce((acc, cur) => acc + cur);
 
 //To filter high orders than 100
 
-const highvalue = orders.filter(order => order > 100);
+const highvalue = orders.filter(order => order >= 100);
 
 console.log(added_tax, total, highvalue);
